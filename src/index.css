@@ -7,10 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark{
+  background-color: #12121296;
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
@@ -23,11 +29,17 @@ h1{
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  align-items: center;
   padding: 1rem;
+}
+
+.navigation, .navigation ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  list-style-type: none;
 }
 
 a{
@@ -70,7 +82,7 @@ form{
   margin: 0 auto;
 }
 
-.card{
+.card, .detail-dentist {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -86,37 +98,34 @@ form{
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-  width: 90vw;
-  height: auto;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1600px;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 
-table {
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
-
+.card-img {
+  margin: 0 10% 0 10%;
+  width: 80%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+.details-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+.details-container h1 {
+  width: 100%;
 }
 
 .dark{
   background-color: #12121296;
   color: white;
 }
+
 .dark > a {
   color: white;
 }
